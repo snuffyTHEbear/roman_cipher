@@ -2,13 +2,10 @@ import string
 az = string.ascii_uppercase
 strings = []
 
-
-# Define a main function
 def main():
-    # Code to execute
+    # Ask for cipher input
     cipher = input("Please input the code: ").upper()
     shift_letters(cipher)
-    print(strings)
 
 
 def shift_letters(cipher):
@@ -18,7 +15,6 @@ def shift_letters(cipher):
     places_to_shift = 0
 
     while places_to_shift <= len(az):
-        print(places_to_shift)
         broken_cipher = ''
 
         for letter in cipher:
